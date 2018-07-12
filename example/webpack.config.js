@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    chunkFilename: '[name].bundle.js',
     publicPath: '/assets/',
   },
   module: {
@@ -42,4 +43,9 @@ module.exports = {
     https: false,
     noInfo: true,
   },
+  //  optimization: {
+  //      splitChunks: {
+  //        chunks: 'all'
+  //      }
+  //    },
 };
