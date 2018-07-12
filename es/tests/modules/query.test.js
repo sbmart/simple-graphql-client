@@ -1,21 +1,21 @@
-import query from "../../modules/query";
-describe('query', function () {
-  it('should return a valid query object', function () {
-    var val = query("{ todos { id } }");
+import query from '../../modules/query';
+describe('query', function() {
+  it('should return a valid query object', function() {
+    var val = query('{ todos { id } }');
     expect(val).toMatchObject({
-      query: "{ todos { id } }",
-      variables: {}
+      query: '{ todos { id } }',
+      variables: {},
     });
   });
-  it('should return a valid query object with variables', function () {
-    var val = query("{ todos { id } }", {
-      test: 5
+  it('should return a valid query object with variables', function() {
+    var val = query('{ todos { id } }', {
+      test: 5,
     });
     expect(val).toMatchObject({
-      query: "{ todos { id } }",
+      query: '{ todos { id } }',
       variables: {
-        test: 5
-      }
+        test: 5,
+      },
     });
   });
 });

@@ -5,5 +5,5 @@ var context = createReactContext({}); // TypeScript is very pedantic about re-ex
 // ends up issuing an error. This is dumb, but this all gets erased anyway.
 
 var Provider = context.Provider,
-    Consumer = context.Consumer;
+  Consumer = context.Consumer;
 export { Provider, Consumer };

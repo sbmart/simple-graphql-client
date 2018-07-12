@@ -12,7 +12,7 @@ module.exports = {
   ],
   plugins: [
     ['@babel/proposal-class-properties', { loose }],
-    ['@babel/proposal-pipeline-operator', { 'proposal': 'minimal' }],
+    ['@babel/proposal-pipeline-operator', { proposal: 'minimal' }],
     [
       'module-resolver',
       {
